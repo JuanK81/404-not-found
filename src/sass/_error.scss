@@ -1,0 +1,69 @@
+.error {
+  align-self: center;
+  z-index: 10;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-number {
+      display: flex;
+      h1 {
+        font-size: 35rem;
+        font-family: $font-tertiary;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 26rem;
+        text-shadow: .3rem 1rem .1rem rgb(0, 162, 255);
+      }
+
+      &--1 {
+        color: $color-primary-dark;
+        z-index: 10;
+        transform: translateX(4rem);
+      }
+
+      &--2 {
+        color: $color-secondary;
+        z-index: 20;
+      }
+
+      &--3 {
+        color: $color-primary-dark;
+        z-index: 30;
+        transform: translateX(-4rem);
+      }
+    }
+
+    h2 {
+      font-size: 8rem;
+      font-family: $font-primary;
+      color: #fff;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 10rem;
+    }
+
+    p {
+      color: $color-primary-light;
+      font-family: $font-tertiary;
+      font-size: 5.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      line-height: 6rem;
+    }
+  }
+
+  &_actions {
+    display: flex;
+  }
+}
