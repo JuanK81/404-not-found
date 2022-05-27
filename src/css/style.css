@@ -66,7 +66,19 @@ body {
   font-family: "Esphimere", sans-serif;
   font-size: 2.8rem;
   letter-spacing: 0.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all 0.15s ease-in; }
+  .base-button:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0rem 0rem 1rem #00a2ff;
+    text-shadow: 0rem 0rem 1rem #00a2ff; }
+  @media only screen and (max-width: 48em) {
+    .base-button {
+      min-width: 15rem;
+      padding: .8rem 1.2rem;
+      margin: 2.8rem;
+      font-size: 2rem;
+      letter-spacing: 0.5rem; } }
 
 .error {
   align-self: center;
@@ -89,7 +101,12 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         line-height: 26rem;
-        text-shadow: 0.3rem 1rem 0.1rem #00a2ff; }
+        text-shadow: 0.3rem 0.8rem 0.1rem #00a2ff; }
+        @media only screen and (max-width: 57em) {
+          .error_code-number h1 {
+            font-size: 23rem;
+            line-height: 26rem;
+            text-shadow: 0.3rem 0.8rem 0.1rem #00a2ff; } }
       .error_code-number--1 {
         color: #3f4a5e;
         z-index: 10;
@@ -101,6 +118,11 @@ body {
         color: #3f4a5e;
         z-index: 30;
         transform: translateX(-4rem); }
+      @media only screen and (max-width: 57em) {
+        .error_code-number--1 {
+          transform: translateX(2.55rem); }
+        .error_code-number--3 {
+          transform: translateX(-2.55rem); } }
     .error_code h2 {
       font-size: 8rem;
       font-family: "Esphimere", sans-serif;
@@ -108,6 +130,9 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       line-height: 10rem; }
+      @media only screen and (max-width: 48em) {
+        .error_code h2 {
+          font-size: 6rem; } }
     .error_code p {
       color: #929db6;
       font-family: "Teko", sans-serif;
@@ -115,5 +140,8 @@ body {
       text-transform: uppercase;
       letter-spacing: 0.3rem;
       line-height: 6rem; }
+      @media only screen and (max-width: 48em) {
+        .error_code p {
+          font-size: 4rem; } }
   .error_actions {
     display: flex; }

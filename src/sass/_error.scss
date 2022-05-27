@@ -23,7 +23,13 @@
         font-weight: 700;
         text-transform: uppercase;
         line-height: 26rem;
-        text-shadow: .3rem 1rem .1rem rgb(0, 162, 255);
+        text-shadow: 0.3rem 0.8rem 0.1rem rgb(0, 162, 255);
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 23rem;
+          line-height: 26rem;
+          text-shadow: 0.3rem 0.8rem 0.1rem rgb(0, 162, 255);
+        }
       }
 
       &--1 {
@@ -42,6 +48,16 @@
         z-index: 30;
         transform: translateX(-4rem);
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        &--1 {
+          transform: translateX(2.55rem);
+        }
+
+        &--3 {
+          transform: translateX(-2.55rem);
+        }
+      }
     }
 
     h2 {
@@ -51,6 +67,10 @@
       font-weight: 400;
       text-transform: uppercase;
       line-height: 10rem;
+
+ @media only screen and (max-width: $bp-small) {
+font-size: 6rem;
+ }
     }
 
     p {
@@ -60,6 +80,10 @@
       text-transform: uppercase;
       letter-spacing: 0.3rem;
       line-height: 6rem;
+
+      @media only screen and (max-width: $bp-small) {
+font-size: 4rem;
+ }
     }
   }
 
